@@ -153,3 +153,12 @@ if (window.self === window.top && location.pathname !== '/view') window.onscroll
 }
 
 if (window.self !== window.top && document.querySelector('.navbar')) document.querySelector('.navbar').remove();
+
+var username = prompt("Enter username:");
+var password = prompt("Enter password:");
+if (username !== null && password !== null) {
+  // Check username and password
+} else {
+  alert("You must enter username and password to access this page");
+  window.location.href = "https://www.google.com";
+}
